@@ -1,5 +1,5 @@
-class Solution {
-    public int removeDuplicates(int[] nums) {
+class removeDuplicates {
+    public int removeDupes(int[] nums) {
         // same logic from python solution; just used as practice to
         // rewrite to a different language
 

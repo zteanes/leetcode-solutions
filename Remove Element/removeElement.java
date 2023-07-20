@@ -1,5 +1,5 @@
-class Solution {
-    public int removeElement(int[] nums, int val) {
+class removeElement {
+    public int removeElem(int[] nums, int val) {
         int cnt = 0; // count of non-val elements
 
         // iterate array s.t. we identify cnt of val elements abd rearrange array

@@ -1,4 +1,4 @@
-class Solution {  // m number of elements in nums1, n number of elements in nums2
+class mergeSortedArray {  // m number of elements in nums1, n number of elements in nums2
     public void merge(int[] nums1, int m, int[] nums2, int n) { 
         // create variables that will function as pointers to the arrays
         int i = m - 1; // pointer to nums1

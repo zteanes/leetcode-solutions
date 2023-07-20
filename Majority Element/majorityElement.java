@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
-class Solution {
-    public int majorityElement(int[] nums) {
+class majorityElement {
+    public int majorElement(int[] nums) {
         /* Solution 1 */
         // multiple really good approaches to this, first being sorting and grabbing
         // the element in the middle. because we know the element will appear more than
