@@ -15,13 +15,12 @@ class rotateArray {
 
                 pointer++; // increment pointer
             }
-            nums = next; // 
+            nums = next; // save the step
         }
     }
 
-
     public static void main(String[] args){
-        int array[] = {1,2,3,4,5,6,7};
+        int array[] = {-1, -100, 3, 99};
         rotate(array, 3);
     }
 }
