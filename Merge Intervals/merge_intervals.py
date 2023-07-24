@@ -12,15 +12,15 @@ class Solution:
             List[List[int]]: list of merged intervals
         """
         intervals.sort(key = lambda x: x[0]) # sort by start num
-        merged = [] # list of merged intervals
+        sol = [] # list of merged intervals
         
         for interval in intervals: # for each interval
-            if not merged or merged[-1][1] < interval[0]: # if merged is empty or no overlap
-                merged.append(interval) # add interval to merged
+            if not sol or sol[-1][1] < interval[0]: # if merged is empty or no overlap
+                sol.append(interval) # add interval to merged
             else:
-                merged[-1][1] = max(interval[1], merged[-1][1]) # update end num of last interval in merged
+                sol[-1][1] = max(interval[1], sol[-1][1]) # update end num of last interval in merged
                 
-        return merged # return merged intervals
+        return sol # return merged intervals
     
 
 if __name__ == '__main__':
@@ -39,4 +39,3 @@ if __name__ == '__main__':
     assert sol.merge(intervals3) == [[0,4]]
     assert sol.merge(intervals4) == [[1,4]]
     assert sol.merge(intervals5) == []
-
