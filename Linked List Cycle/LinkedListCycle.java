@@ -1,15 +1,12 @@
 /**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
+ * Given a linked list, determine if it has a cycle in it.
  */
 public class LinkedListCycle{
+    /**
+     * Main method for processing / testing finding a linked list cycle
+     * 
+     * @param args Command line arguments
+     */
     public static void main(String[] args) {
         // Create nodes
         ListNode node1 = new ListNode(1);
@@ -37,7 +34,18 @@ public class LinkedListCycle{
     }
 }
 
+/**
+ * Class for finding a cycle in a linked list
+ */
 class Solution{
+    
+    /**
+     * Given a head to a linked list, this method determines if the linked list
+     * has a cycle inside of it.
+     * 
+     * @param head first node / head of a linked list
+     * @return true if the linked list contains a cycle, false otherwise
+     */
     public boolean hasCycle(ListNode head) {
         ListNode slow = head, fast = head; // pointers for nodes in linked list
 
@@ -53,6 +61,9 @@ class Solution{
     }
 }
 
+/**
+ * Class for defining a node in a linked list
+ */
 class ListNode {
     int val;
     ListNode next;
