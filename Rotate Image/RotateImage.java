@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class RotateImage {
     public void rotate(int[][] matrix) {
         // transpose the matrix

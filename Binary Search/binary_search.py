@@ -4,7 +4,7 @@ class Solution:
     def search(self, nums: List[int], target: int) -> int:
         """
         This method defines finding a target index in a list of ints using 
-        the binary search algorithm, in O(logn) time.
+        the binary search algorithm, in O(log(n)) time.
 
         Args:
             nums (List[int]): list of sorted number to search through
@@ -31,3 +31,9 @@ class Solution:
                 right = mid - 1
             
         return -1 
+    
+# test for the binary search algorithm
+s = Solution()
+assert s.search([-1,0,3,5,9,12], 9) == 4 # should return 4
+assert s.search([-1,0,3,5,9,12], 2) == -1 # should return -1   
+print("All tests passed!")
