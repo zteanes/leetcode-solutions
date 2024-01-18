@@ -1,8 +1,5 @@
-import java.lang.reflect.Array;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Set;
 
 class uniqueNumber {
     public boolean uniqueOccurrences(int[] arr) {
@@ -24,6 +21,11 @@ class uniqueNumber {
         return set.size() == map.size();
     }
 
+    /**
+     * main entry point for the program used to test.
+     * 
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
         uniqueNumber un = new uniqueNumber();
         int[] nums = {0, 1, 1, 2, 2, 2};
